@@ -17,9 +17,9 @@ The configurations include:
 
 If VIM is already installed, just run the script as:
 
-'''shell
+```shell
 ./setup.sh
-'''
+```
 
 Now VIM should be configured. If a previous configuration was already available on the system the script might no execute properly.
 
