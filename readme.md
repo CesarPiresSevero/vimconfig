@@ -21,7 +21,7 @@ If VIM is already installed, just run the script as:
 ./setup.sh
 ```
 
-Now VIM should be configured. If a previous configuration was already available on the system the script might no execute properly.
+Now VIM should be configured. If a previous configuration was already available on the system the script might not execute properly.
 
 ### Colorschemes
 
