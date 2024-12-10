@@ -76,4 +76,8 @@ There are only 3 keymaps set:
 
 - Windows is not supported!
 - Tested on Manjaro and Ubuntu (24.04)
+- Shoutout to:
+    - [brandon-wallace](https://github.com/brandon-wallace/vimrc)
+    - [joshdick](https://github.com/joshdick/onedark.vim)
+    - [ku1ik](https://github.com/ku1ik/vim-monokai)
 
