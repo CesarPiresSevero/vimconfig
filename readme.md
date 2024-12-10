@@ -13,7 +13,7 @@ The configurations include:
 - New colorschemes
 - New keymaps
 
-This solution is targeted for begginers in both Vim and Linux that want to have a basic starting point without going deep into configurations.
+This solution is targeted for beginners in both Vim and Linux that want to have a basic starting point without going deep into configurations.
 Jump into action!
 
 ## Instructions
@@ -39,7 +39,7 @@ sudo dnf install vim
 
 ### Configuring Vim
 
-With Vim already installed, just run the following script:
+With Vim already installed, just run the following script (while in the repository's root folder):
 
 ```shell
 ./setup.sh
@@ -59,6 +59,7 @@ There are 3 colorschemes added to this repository:
 - Monokai
 
 By default, Onedark Custom is set. One may change it by uncommenting the desired scheme in .vimrc. Here are some samples of the colorschemes with C language:
+
 ![Monokai](img/monokai.png) ![Onedark](img/onedark.png) ![Onedark Custom](img/onedarkcustom.png) 
 
 ### Keymaps
