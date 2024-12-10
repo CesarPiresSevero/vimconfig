@@ -58,9 +58,11 @@ There are 3 colorschemes added to this repository:
 - Onedark Custom
 - Monokai
 
-By default, Onedark Custom is set. One may change it by uncommenting the desired scheme in .vimrc. Here are some samples of the colorschemes with C language:
+By default, Onedark Custom is set. One may change it by uncommenting the desired scheme in .vimrc. Here are some samples of the colorschemes with C language, in the order above:
 
-![Monokai](img/monokai.png) ![Onedark](img/onedark.png) ![Onedark Custom](img/onedarkcustom.png) 
+![Onedark](img/onedark.png) 
+![Onedark Custom](img/onedarkcustom.png) 
+![Monokai](img/monokai.png) 
 
 ### Keymaps
 
