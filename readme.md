@@ -16,6 +16,12 @@ The configurations include:
 This solution is targeted for beginners in both Vim and Linux that want to have a basic starting point without going deep into configurations.
 Jump into action!
 
+## Donations
+
+I believe in **free and open source software**! Help the OSS community by donating below:
+
+[<img src="img/paypal_button.png" width="400" height="228">](https://www.paypal.com/donate/?hosted_button_id=AMFZ83MA4Z3RA)
+
 ## Instructions
 
 ### Installing Vim
