@@ -88,13 +88,13 @@ set wildmenu
 " Make wildmenu behave like similar to Bash completion.
 set wildmode=list:longest
 
-" Exclude selected extensions from filename completion.
+" There are certain files that we would never want to edit with Vim.
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 "------------------------------  Colorschemes  -----------------------------
 "
-" Keep one colorscheme command active; disable overrides for stock Onedark.
+" To select the colorscheme just uncomment the desired one 
 "
 
 " Onedark Default
@@ -132,19 +132,5 @@ augroup commenting_blocks_of_code
   autocmd FileType mail             let b:comment_leader = '> '
   autocmd FileType vim              let b:comment_leader = '" '
 augroup END
-" Unsupported filetypes leave the buffer unchanged.
-function! VimConfigComment(uncomment) range
-  if !exists('b:comment_leader')
-    return
-  endif
-  let leader = escape(b:comment_leader, '\/')
-  let replacement = a:uncomment ? '' : leader
-  let pattern = a:uncomment ? '^\V' . leader : '^'
-  execute a:firstline . ',' . a:lastline . 's/' . pattern . '/' . replacement . '/e'
-  nohlsearch
-endfunction
-noremap <silent> <C-_> :call VimConfigComment(0)<CR>
-noremap <silent> <C-?> :call VimConfigComment(1)<CR>
-" Terminal-independent alternatives, also available for visual selections.
-noremap <silent> <Leader>c :call VimConfigComment(0)<CR>
-noremap <silent> <Leader>u :call VimConfigComment(1)<CR>
+noremap <silent> <C-_> :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> <C-?> :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
